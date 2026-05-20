@@ -570,3 +570,250 @@ nav.solid .nav-burger span { background: var(--text-h); }
   .eco-impact-item { border-bottom: 1px solid rgba(255,255,255,.08); border-left: none !important; }
   .eco-impact-cta-item { border-top: none; border-bottom: none; }
 }
+
+/* ══ GALLERY ══ */
+.gallery-section { background: var(--bg-alt); }
+ 
+.gallery-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+ 
+.gallery-header h2 {
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  color: var(--text-h);
+  line-height: 1.0;
+  letter-spacing: -.03em;
+}
+ 
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 6px;
+}
+ 
+.gnav-btn {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-m);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s;
+  flex-shrink: 0;
+}
+.gnav-btn svg { width: 18px; height: 18px; color: var(--text-h); transition: color .25s; }
+.gnav-btn:hover { background: var(--blue); border-color: var(--blue); transform: scale(1.05); }
+.gnav-btn:hover svg { color: #fff; }
+ 
+.gallery-dots { display: flex; align-items: center; gap: 7px; }
+.gdot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border-m);
+  border: none;
+  cursor: pointer;
+  transition: all .35s cubic-bezier(.34,1.2,.64,1);
+  padding: 0;
+}
+.gdot.active {
+  background: var(--blue);
+  width: 26px;
+  border-radius: 4px;
+}
+.gdot:hover:not(.active) { background: var(--blue-l); transform: scale(1.2); }
+ 
+/* ── Slider ── */
+.gallery-slider-wrap { position: relative; overflow: hidden; }
+ 
+.gallery-slide {
+  display: none;
+  opacity: 0;
+  transform: translateX(40px);
+}
+.gallery-slide.active {
+  display: block;
+  animation: slideIn .55s cubic-bezier(.4,0,.2,1) forwards;
+}
+.gallery-slide.slide-out {
+  display: block;
+  animation: slideOut .4s cubic-bezier(.4,0,.2,1) forwards;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+}
+ 
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideOut {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-40px); }
+}
+ 
+/* ── Grid ── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-rows: 240px 220px 320px;
+  gap: 10px;
+}
+ 
+/* Posiciones asimétricas */
+.gi-1 { grid-column: 1 / 2; grid-row: 1 / 3; } /* Grande izquierda, 2 filas */
+.gi-2 { grid-column: 2 / 4; grid-row: 1 / 2; } /* Ancho superior derecha */
+.gi-3 { grid-column: 2 / 3; grid-row: 2 / 3; } /* Pequeño medio */
+.gi-4 { grid-column: 3 / 4; grid-row: 2 / 3; } /* Pequeño medio-der */
+.gi-5 { grid-column: 1 / 4; grid-row: 3 / 4; } /* Ancho completo abajo */
+ 
+/* ── Items ── */
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--blue-bg);
+  border: 1px solid var(--border);
+}
+ 
+.gi-bg {
+  position: absolute;
+  inset: -4px;
+  background-size: cover;
+  background-position: center;
+  animation: kenBurns 10s ease-in-out infinite;
+  will-change: transform;
+}
+ 
+/* Cada item con animación desfasada */
+.gi-1 .gi-bg { animation-duration: 12s; animation-delay:  0s; }
+.gi-2 .gi-bg { animation-duration:  9s; animation-delay: -3s; }
+.gi-3 .gi-bg { animation-duration: 11s; animation-delay: -5s; }
+.gi-4 .gi-bg { animation-duration:  8s; animation-delay: -2s; }
+.gi-5 .gi-bg { animation-duration: 14s; animation-delay: -7s; }
+ 
+/* Pausa ken burns en hover, zoom manual */
+.gallery-item:hover .gi-bg {
+  animation-play-state: paused;
+  transform: scale(1.07);
+  transition: transform .6s ease;
+}
+
+ 
+/* Overlay e icono */
+.gi-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5,12,26,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .35s ease;
+  border-radius: 10px;
+}
+.gallery-item:hover .gi-overlay { background: rgba(5,12,26,.5); }
+ 
+.gi-icon {
+  width: 30px; height: 30px;
+  color: #fff;
+  opacity: 0;
+  transform: scale(.6) rotate(-10deg);
+  transition: all .35s cubic-bezier(.34,1.56,.64,1);
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.4));
+}
+.gallery-item:hover .gi-icon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+ 
+/* ── Modal ── */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease;
+}
+.gallery-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+ 
+.gmodal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5,12,26,.92);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+ 
+.gmodal-close {
+  position: absolute;
+  top: 24px; right: 28px;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  border: 1.5px solid rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s;
+  z-index: 2;
+}
+.gmodal-close:hover { background: rgba(255,255,255,.22); transform: scale(1.08); }
+.gmodal-close svg { width: 18px; height: 18px; color: #fff; }
+ 
+.gmodal-content {
+  position: relative;
+  z-index: 1;
+  max-width: 88vw;
+  max-height: 85vh;
+  transform: scale(.88);
+  transition: transform .45s cubic-bezier(.34,1.3,.64,1);
+}
+.gallery-modal.open .gmodal-content { transform: scale(1); }
+ 
+.gmodal-img {
+  max-width: 88vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 40px 100px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
+  display: block;
+}
+ 
+/* ── Responsive ── */
+@media(max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 8px;
+  }
+  .gi-1 { grid-column: 1/2; grid-row: 1/3; }
+  .gi-2 { grid-column: 2/3; grid-row: 1/2; }
+  .gi-3 { grid-column: 2/3; grid-row: 2/3; }
+  .gi-4 { grid-column: 1/2; grid-row: 3/4; }
+  .gi-5 { grid-column: 2/3; grid-row: 3/4; }
+  .gallery-header-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+}
+ 
+@media(max-width: 600px) {
+  .gallery-grid {
+    grid-template-rows: 160px 160px 140px;
+    gap: 7px;
+  }
+  .gi-5 { grid-column: 1/3; }
+}
