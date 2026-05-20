@@ -21,7 +21,6 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#approach">Approach</a></li>
-    <li><a href="#services">Services</a></li>
     <li><a href="#entrepreneurs">Entrepreneurs</a></li>
     <li><a href="#steps">How We Work</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -33,13 +32,12 @@
 </nav>
 
 <div class="mobile-drawer" id="mobile-drawer">
-  <a href="#about"          class="mob-l">About</a>
-  <a href="#approach"       class="mob-l">Approach</a>
-  <a href="#services"       class="mob-l">Services</a>
-  <a href="#entrepreneurs"  class="mob-l">Entrepreneurs</a>
-  <a href="#steps"          class="mob-l">How We Work</a>
-  <a href="#faq"            class="mob-l">FAQ</a>
-  <a href="#contact"        class="mob-cta mob-l">Get In Touch →</a>
+  <a href="#about"         class="mob-l">About</a>
+  <a href="#approach"      class="mob-l">Approach</a>
+  <a href="#entrepreneurs" class="mob-l">Entrepreneurs</a>
+  <a href="#steps"         class="mob-l">How We Work</a>
+  <a href="#faq"           class="mob-l">FAQ</a>
+  <a href="#contact"       class="mob-cta mob-l">Get In Touch →</a>
 </div>
 
 <!-- ══ 1. HERO ══ -->
@@ -49,12 +47,14 @@
   <div class="hero-glow2"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Prime Excess Management</div>
+    <div class="hero-eyebrow">Prime Excess Management · Asset Patronage Platform</div>
     <h1>
       Every asset<br/>tells a story.
       <em>We carry the legacy built-in with precision, care and integrity.</em>
     </h1>
-<p class="hero-sub">Prime Excess Management connects surplus industrial assets with real opportunity — Enabling companies to focus on building their infrastructure and an opportunity of philanthropy through patronate visionary young entrepreneurs looking to make change for a healthy environment and carrying on with “The Legacy” in their innovative ingenuity.</p>    <div class="hero-btns">
+    <p class="hero-sub">Prime Excess Management turns corporate surplus into strategic patronage — recovering maximum value for your organization while channeling your legacy assets into the hands of visionary entrepreneurs building a cleaner, more purposeful economy.</p>
+    <!-- FIX 1: hero-btns wrapper was missing -->
+    <div class="hero-btns">
       <a href="#contact" class="hbtn hbtn-blue">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <a href="#about"   class="hbtn hbtn-ghost">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
     </div>
@@ -76,10 +76,16 @@
 <!-- ══ 3. ABOUT ══ -->
 <section class="about-section sp" id="about">
   <div class="container">
+
+    <!-- FIX 2: about-heading only contains the heading text, NOT the grid -->
     <div class="about-heading reveal">
       <div class="section-tag" style="justify-content:center;margin-bottom:16px;">About Prime Excess</div>
-      <h2>Built for companies that want to<br/>work smarter with their assets.</h2>
-<p>Whether you manage a single facility or multiple operations, we help you recover maximum value from surplus assets — so your organization can focus entirely on building its infrastructure. Every asset redirected becomes an act of patronage: a resource that empowers a new generation of entrepreneurs to carry The Legacy forward with precision, care, and integrity.</p>    <div class="about-grid">
+      <h2>Built for companies ready to recover value — and become patrons of what comes next.</h2>
+      <p>When your surplus assets move through Prime Excess, two things happen simultaneously: your organization recovers capital and frees its infrastructure to grow — and somewhere, a young entrepreneur gets the equipment they need to start. That is not a side effect. That is the model. That is patronage.</p>
+    </div>
+
+    <!-- FIX 2: about-grid is now a sibling of about-heading, NOT inside it -->
+    <div class="about-grid">
       <div class="about-card reveal">
         <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 9V6a2 2 0 00-2-2H7a2 2 0 00-2 2v3"/><path d="M3 11v5a2 2 0 002 2h14a2 2 0 002-2v-5a2 2 0 00-4 0v2H7v-2a2 2 0 00-4 0z"/></svg>
         <h3>Industrial Equipment</h3>
@@ -95,16 +101,18 @@
         <h3>Technology & Electronics</h3>
         <p>Outdated servers, networking equipment, lab instruments, and enterprise technology retain significant value long after they leave active inventory. We recover it through strategic remarketing and repurposing.</p>
       </div>
-  <div class="about-card reveal d3" style="border-color:var(--blue);background:var(--blue-bg);">
-  <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-  <h3>Entrepreneur Support</h3>
-  <p>We believe surplus assets are the physical infrastructure of the next entrepreneurial wave. We channel equipment, technology, and inventory toward an ecosystem of emerging builders — lowering the barrier to entry so talent, not capital, determines who gets to compete.</p>
-</div>
+      <div class="about-card reveal d3" style="border-color:var(--blue);background:var(--blue-bg);">
+        <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3>Entrepreneur Support</h3>
+        <p>Every company that works with us becomes a patron — not through charity, but through intention. By choosing where their assets go, they sponsor the next generation of visionary entrepreneurs committed to a healthier environment, carrying that legacy forward with precision, care, and integrity.</p>
+      </div>
     </div>
+
     <div class="about-btns reveal d3">
       <a href="#approach" class="hbtn hbtn-blue">Our Approach <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <a href="#contact"  class="hbtn hbtn-blue-outline">Get In Touch</a>
     </div>
+
   </div>
 </section>
 
@@ -118,7 +126,7 @@
     <div class="approach-content">
       <div class="section-tag">Our Approach</div>
       <h2 class="approach-h2">A structured system<br/>for predictable results.</h2>
-      <p class="approach-sub">Every asset is different. Every business situation is unique. Our three-phase approach adapts to your goals while delivering consistent, measurable outcomes.</p>
+      <p class="approach-sub">Every asset is different. Every act of patronage is unique. Our three-phase approach maximizes recovery value for your organization while ensuring every asset finds its highest purpose — financially and humanly.</p>
       <a href="#contact" class="hbtn hbtn-blue" style="align-self:flex-start;margin-bottom:36px;">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <div class="accord-item">
         <button class="accord-btn open" onclick="toggleAccord(this)">
@@ -151,68 +159,11 @@
   </div>
 </section>
 
-<!-- ══ 5. SERVICES ══
-<section class="services-section sp" id="services">
-  <div class="container">
-    <div class="section-tag reveal">What We Manage</div>
-    <h2 class="reveal d1" style="font-weight:800;font-size:clamp(2.2rem,4.5vw,3.5rem);color:var(--text-h);line-height:1.0;letter-spacing:-.03em;margin-bottom:48px;">Select the asset category<br/>that fits your situation.</h2>
-    <div class="services-tabs">
-      <button class="tab-btn active" onclick="switchTab(0,this)">Industrial Equipment</button>
-      <button class="tab-btn" onclick="switchTab(1,this)">Surplus Inventory</button>
-      <button class="tab-btn" onclick="switchTab(2,this)">Technology & Electronics</button>
-    </div>
-
-   TAB 1 
-    <div class="tab-panel active" id="tab-0">
-      <div class="tab-media" style="background-image:url('/assets/industrial.webp');"></div>
-      <div class="tab-info">
-        <div class="tab-period">Heavy Machinery & Operations</div>
-        <h3 class="tab-title">Industrial Equipment</h3>
-        <p class="tab-desc">From manufacturing lines to decommissioned plant machinery, we manage the full lifecycle of industrial assets — ensuring nothing of value goes unrecovered.</p>
-        <div class="tab-sub-grid">
-          <div class="tab-sub"><div class="tab-sub-title">Manufacturing & Production</div><div class="tab-sub-body">CNC machines, lathes, presses, conveyors, and production-line equipment. Assets are assessed for resale value in secondary industrial markets or redirected to facilities with active demand for specific machinery types.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Heavy Tools & Worksite Assets</div><div class="tab-sub-body">Forklifts, hoists, cranes, compressors, generators, and specialized worksite equipment. We evaluate condition, operational history, and market demand to determine the optimal recovery channel for each asset.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Facility & Infrastructure Equipment</div><div class="tab-sub-body">HVAC systems, transformers, electrical panels, pumps, and facility infrastructure. These assets often retain 40–60% of original value through targeted buyer outreach and industrial auction platforms.</div></div>
-        </div>
-      </div>
-    </div>
-  
-    TAB 2 
-    <div class="tab-panel" id="tab-1">
-      <div class="tab-media" style="background-image:url('/assets/inventory.webp');"></div>
-      <div class="tab-info">
-        <div class="tab-period">Overstock & Warehouse Management</div>
-        <h3 class="tab-title">Surplus Inventory</h3>
-        <p class="tab-desc">Idle inventory ties up capital and space. We convert warehouse overflow into recovered value through structured disposition strategies designed around your business timeline.</p>
-        <div class="tab-sub-grid">
-          <div class="tab-sub"><div class="tab-sub-title">Raw Materials & Overstock</div><div class="tab-sub-body">Excess raw materials, unused components, MRO parts, and overstock that accumulated during production cycles. We connect materials to buyers across manufacturing and supply chain networks to maximize per-unit recovery.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Finished Goods & Seasonal Inventory</div><div class="tab-sub-body">Unsold finished goods, seasonal items, and discontinued product lines. Through B2B consignment, auction platforms, and direct sales networks, we recover value while clearing warehouse space efficiently.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Warehouse & Storage Infrastructure</div><div class="tab-sub-body">Pallet racking, shelving systems, material handling equipment, and storage infrastructure. Often overlooked, these assets retain strong resale value and are in consistent demand across warehouse and logistics operations.</div></div>
-        </div>
-      </div>
-    </div>
-    <!-- TAB 3 
-    <div class="tab-panel" id="tab-2">
-      <div class="tab-media" style="background-image:url('/assets/it.webp');"></div>
-      <div class="tab-info">
-        <div class="tab-period">IT & Technology Assets</div>
-        <h3 class="tab-title">Technology & Electronics</h3>
-        <p class="tab-desc">Outdated technology doesn't mean zero value. Enterprise IT assets, lab instruments, and electronics retain recoverable value long past their useful life in your organization.</p>
-        <div class="tab-sub-grid">
-          <div class="tab-sub"><div class="tab-sub-title">Enterprise IT & Servers</div><div class="tab-sub-body">Servers, networking equipment, storage arrays, and enterprise computing infrastructure. We identify refurbishment potential, component-level value, and secondary market buyers to recover maximum value from decommissioned IT environments.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Lab & Test Equipment</div><div class="tab-sub-body">Oscilloscopes, signal analyzers, testing instruments, and precision lab equipment. These specialized assets command premium prices in secondary markets and are actively sought by research institutions and engineering firms.</div></div>
-          <div class="tab-sub"><div class="tab-sub-title">Consumer & Commercial Electronics</div><div class="tab-sub-body">Surplus commercial electronics, point-of-sale systems, displays, and AV equipment. We leverage direct sales channels, eBay remarketing, and specialized electronics buyers to recover value across all condition tiers.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-
-<!-- ══ 6. STATS ══ -->
+<!-- ══ 5. STATS ══ -->
 <section class="stats-section" id="stats">
   <div class="stats-headline container reveal">
     <div class="stats-headline-tag">The Impact</div>
-    <h2>What changes when your assets<br/><span>finally work for you.</span></h2>
+    <h2>What changes when your surplus<br/><span>becomes someone else's foundation.</span></h2>
   </div>
   <div class="stats-numbers container reveal d1" style="padding-left:0;padding-right:0;">
     <div class="stat-block">
@@ -232,60 +183,65 @@
     </div>
   </div>
   <div class="stats-cta-row container reveal d2" style="padding-left:0;padding-right:0;">
-    <p class="stats-cta-text"><strong>Ready to unlock the value in your surplus?</strong> Let's start with a conversation.</p>
+    <p class="stats-cta-text"><strong>Ready to recover value and become a patron of the next generation?</strong> Let's start with a conversation.</p>
     <a href="#contact" class="hbtn hbtn-blue">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
   </div>
 </section>
 
-
-<!-- ══ 8. ENTREPRENEURS ══ -->
+<!-- ══ 6. ENTREPRENEURS ══ -->
 <section class="entrepreneurs-section sp" id="entrepreneurs">
   <div class="container">
 
-  <div class="entr-header reveal">
-  <div class="section-tag" style="justify-content:center;margin-bottom:16px;">Strategic Partners</div>
-  <h2>We don't just move assets.<br/>We build the ecosystem around them.</h2>
-<p class="entr-sub">A true entrepreneurial ecosystem is built on more than capital — it's built on legacy. The companies we work with don't just recover asset value: they become patrons of something larger. By redirecting their surplus toward visionary young entrepreneurs committed to a clean and purposeful future, they enable the continuation of a legacy carried forward with precision, care, and integrity. We are the connection that makes it possible.</p></div>
+    <!-- FIX 3: entr-header only contains heading text, NOT the grid -->
+    <div class="entr-header reveal">
+      <div class="section-tag" style="justify-content:center;margin-bottom:16px;">The Patronage Model</div>
+      <h2>Corporate surplus.<br/>Entrepreneurial foundation.<br/>One act of patronage.</h2>
+      <p class="entr-sub">Patronage is one of the oldest and most powerful forces in human progress — the act of those with resources choosing to direct them toward those with vision. Prime Excess Management makes that possible at scale. When a corporation moves its surplus through us, it doesn't just recover capital. It becomes a patron: funding the infrastructure of entrepreneurs committed to a clean environment, a purposeful economy, and a legacy built with integrity.</p>
+    </div>
 
+    <!-- FIX 3: entr-grid is now a sibling of entr-header, NOT inside it -->
     <div class="entr-grid">
 
-      <!-- Left column — manifesto -->
+      <!-- Left column — manifesto + pillars -->
       <div class="entr-manifesto reveal d1">
-      <div class="entr-manifesto-inner">
-  <div class="entr-quote-mark">"</div>
-<p class="entr-quote-text">Every asset carries a legacy. Our role is to make sure that legacy lands in the hands of someone with the vision, the integrity, and the drive to carry it forward — and the environment to build it on.</p>  <div class="entr-quote-author">
-    <div class="entr-author-dot"></div>
-    Prime Excess Management — Core Belief
-  </div>
-</div>
-       <div class="entr-pillars">
-  <div class="entr-pillar">
-    <div class="entr-pillar-num">01</div>
-    <div>
-      <div class="entr-pillar-title">Physical Access to Capital</div>
-      <p class="entr-pillar-desc">Equipment, technology, and inventory are forms of capital. We give entrepreneurs direct access to this physical capital at a fraction of market cost — because the barrier to entry should be ambition, not budget.</p>
-    </div>
-  </div>
-  <div class="entr-pillar">
-    <div class="entr-pillar-num">02</div>
-    <div>
-      <div class="entr-pillar-title">Network & Brotherhood</div>
-      <p class="entr-pillar-desc">We are building a community of builders from all walks of life. Every deal we make creates a new node in that network — connecting entrepreneurs, operators, and suppliers who grow stronger together than apart.</p>
-    </div>
-  </div>
-  <div class="entr-pillar">
-    <div class="entr-pillar-num">03</div>
-    <div>
-<div class="entr-pillar-title">The Legacy & The Environment</div>
-<p class="entr-pillar-desc">Every asset we move carries a story. We redirect it with intention — toward entrepreneurs building a cleaner, healthier future. This is how legacy is preserved: not by keeping things as they are, but by trusting the right hands to carry them forward.</p>
-    </div>
-  </div>
-</div>
+        <div class="entr-manifesto-inner">
+          <div class="entr-quote-mark">"</div>
+          <p class="entr-quote-text">Patronage is not charity. It is the deliberate choice to let what you have built become the foundation for what someone else will create — and trusting that the legacy lands in the right hands.</p>
+          <!-- FIX 3: entr-quote-author wrapper was missing -->
+          <div class="entr-quote-author">
+            <div class="entr-author-dot"></div>
+            Prime Excess Management — The Patronage Model
+          </div>
+        </div>
+
+        <div class="entr-pillars">
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">01</div>
+            <div>
+              <div class="entr-pillar-title">Patronage Through Assets</div>
+              <p class="entr-pillar-desc">When your surplus reaches an entrepreneur through us, you become their patron — not with a check, but with the physical capital they need to compete. That is a more powerful act than a donation. It is infrastructure.</p>
+            </div>
+          </div>
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">02</div>
+            <div>
+              <div class="entr-pillar-title">A Network of Patrons & Builders</div>
+              <p class="entr-pillar-desc">Every company that works with PEM joins a network of corporate patrons. Every entrepreneur that receives assets joins a community of builders. Together, they form an ecosystem held together by shared purpose and mutual benefit.</p>
+            </div>
+          </div>
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">03</div>
+            <div>
+              <div class="entr-pillar-title">Legacy Carried with Integrity</div>
+              <p class="entr-pillar-desc">The entrepreneurs in our ecosystem are not just recipients — they are stewards. They receive assets with a responsibility: to build something cleaner, more purposeful, and more equitable than what came before. That is how a legacy lives on.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Right column — niche cards -->
       <div class="entr-cards-col reveal d2">
-        <div class="entr-section-label">What types of businesses do we support?</div>
+        <div class="entr-section-label">Who becomes part of the patronage ecosystem?</div>
         <div class="entr-cards">
 
           <div class="entr-card">
@@ -340,8 +296,8 @@
 
           <div class="entr-card entr-card-cta">
             <div class="entr-card-cta-inner">
-              <div class="entr-card-cta-label">Your niche isn't listed?</div>
-              <p>If your business can benefit from surplus assets, we want to hear from you. We don't filter by industry — we filter by potential.</p>
+              <div class="entr-card-cta-label">Built for purpose, not just profit?</div>
+              <p>If your business is driven by vision, integrity, and a commitment to a better environment — we want you in this ecosystem. Patronage finds the right hands.</p>
               <a href="#contact" class="hbtn hbtn-blue" style="font-size:.8rem;padding:12px 22px;">Tell us your story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
             </div>
           </div>
@@ -351,39 +307,39 @@
     </div>
 
     <!-- Entrepreneur process -->
-<div class="entr-process reveal d3">
-  <div class="entr-process-label">How you access assets as an entrepreneur</div>
-  <div class="entr-process-steps">
-    <div class="entr-ps">
-      <div class="entr-ps-num">1</div>
-      <div class="entr-ps-title">Tell Us Your Vision</div>
-      <p class="entr-ps-desc">Not just what you need — where you're going. We want to understand your business, your community, and the problem you're solving before we talk assets.</p>
+    <div class="entr-process reveal d3">
+      <div class="entr-process-label">How patronage reaches you</div>
+      <div class="entr-process-steps">
+        <div class="entr-ps">
+          <div class="entr-ps-num">1</div>
+          <div class="entr-ps-title">Tell Us Your Vision</div>
+          <p class="entr-ps-desc">Not just what you need — where you're going. We want to understand your business, your community, and the problem you're solving before we talk assets.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">2</div>
+          <div class="entr-ps-title">We Match Resources</div>
+          <p class="entr-ps-desc">We search our active inventory and network for assets that fit your operation — machinery, IT infrastructure, surplus inventory — at accessible price points built for your stage.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">3</div>
+          <div class="entr-ps-title">We Build the Deal Together</div>
+          <p class="entr-ps-desc">Flexible, transparent terms with no corporate gatekeeping. We structure agreements that give you room to grow — because the deal should enable your next step, not burden it.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">4</div>
+          <div class="entr-ps-title">You Become the Legacy</div>
+          <p class="entr-ps-desc">You are not just receiving assets — you are being entrusted with them. Every patron who chose PEM did so because they believed what they built deserved to continue. Now it does. Through you.</p>
+        </div>
+      </div>
     </div>
-    <div class="entr-ps-arrow">→</div>
-    <div class="entr-ps">
-      <div class="entr-ps-num">2</div>
-      <div class="entr-ps-title">We Match Resources</div>
-      <p class="entr-ps-desc">We search our active inventory and network for assets that fit your operation — machinery, IT infrastructure, surplus inventory — at accessible price points built for your stage.</p>
-    </div>
-    <div class="entr-ps-arrow">→</div>
-    <div class="entr-ps">
-      <div class="entr-ps-num">3</div>
-      <div class="entr-ps-title">We Build the Deal Together</div>
-      <p class="entr-ps-desc">Flexible, transparent terms with no corporate gatekeeping. We structure agreements that give you room to grow — because the deal should enable your next step, not burden it.</p>
-    </div>
-    <div class="entr-ps-arrow">→</div>
-    <div class="entr-ps">
-      <div class="entr-ps-num">4</div>
-<div class="entr-ps-title">You Carry The Legacy</div>
-<p class="entr-ps-desc">The transaction is just the beginning. You join a network of builders committed to precision, care, and integrity — and a shared mission to build the clean, purposeful economy that the next generation deserves.</p>
-    </div>
-  </div>
-</div>
 
   </div>
 </section>
 
-<!-- ══ ECOSYSTEM ══ -->
+<!-- ══ 7. ECOSYSTEM ══ -->
 <section class="ecosystem-section sp" id="ecosystem">
   <div class="container">
 
@@ -396,7 +352,6 @@
     </div>
 
     <div class="eco-pillars-grid">
-
       <div class="eco-pillar-card reveal">
         <div class="eco-pillar-number">01</div>
         <div class="eco-pillar-icon">
@@ -405,7 +360,6 @@
         <div class="eco-pillar-name">Networks</div>
         <p class="eco-pillar-text">Every deal creates a new connection. Suppliers, operators, buyers, and builders enter the same network — and that density of relationships is what separates a transaction from an ecosystem.</p>
       </div>
-
       <div class="eco-pillar-card reveal d1">
         <div class="eco-pillar-number">02</div>
         <div class="eco-pillar-icon">
@@ -414,7 +368,6 @@
         <div class="eco-pillar-name">Physical Capital</div>
         <p class="eco-pillar-text">Capital isn't only money. Industrial machinery, IT infrastructure, and surplus inventory are physical forms of capital — and we make them accessible to entrepreneurs who can't yet afford them at retail.</p>
       </div>
-
       <div class="eco-pillar-card reveal d2">
         <div class="eco-pillar-number">03</div>
         <div class="eco-pillar-icon">
@@ -423,7 +376,6 @@
         <div class="eco-pillar-name">Culture & Brotherhood</div>
         <p class="eco-pillar-text">The most resilient ecosystems are built on trust and shared identity. We are building a community of builders from all walks of life — united by purpose, not just proximity.</p>
       </div>
-
       <div class="eco-pillar-card reveal d3">
         <div class="eco-pillar-number">04</div>
         <div class="eco-pillar-icon">
@@ -432,7 +384,6 @@
         <div class="eco-pillar-name">Support & Mentorship</div>
         <p class="eco-pillar-text">Sharing knowledge is how ecosystems compound. As our network of entrepreneurs grows, so does the collective expertise available to every member — from operations to sourcing to scaling.</p>
       </div>
-
       <div class="eco-pillar-card reveal d1">
         <div class="eco-pillar-number">05</div>
         <div class="eco-pillar-icon">
@@ -441,7 +392,6 @@
         <div class="eco-pillar-name">Human Capital</div>
         <p class="eco-pillar-text">Opportunity follows access. When talented people from any background can enter a market equipped with real tools, the diversity of that ecosystem — and its resilience — grows exponentially.</p>
       </div>
-
       <div class="eco-pillar-card reveal d2">
         <div class="eco-pillar-number">06</div>
         <div class="eco-pillar-icon">
@@ -450,10 +400,8 @@
         <div class="eco-pillar-name">Clean Markets</div>
         <p class="eco-pillar-text">The circular economy represents the fastest-growing segment of industrial investment globally. By redirecting surplus into productive use, we are creating market access at the intersection of efficiency and sustainability.</p>
       </div>
-
     </div>
 
-    <!-- Ecosystem Impact Bar -->
     <div class="eco-impact-bar reveal d3">
       <div class="eco-impact-item">
         <div class="eco-impact-num">$2.1T</div>
@@ -479,12 +427,12 @@
   </div>
 </section>
 
-<!-- ══ 9. HOW WE WORK ══ -->
+<!-- ══ 8. HOW WE WORK ══ -->
 <section class="steps-section sp" id="steps">
   <div class="container">
     <div class="steps-header reveal">
       <div class="section-tag">How We Work</div>
-      <h2>No guesswork. Just<br/>a clear, guided path.</h2>
+      <h2>From surplus to patronage — a clear, guided path.</h2>
     </div>
     <div class="steps-row">
       <div class="step-card reveal">
@@ -511,16 +459,17 @@
   </div>
 </section>
 
-<!-- ══ 7. IMAGE BANNER ══ -->
+<!-- ══ 9. BANNER ══ -->
 <div class="banner-section">
   <div class="banner-bg"></div>
   <div class="banner-overlay"></div>
   <div class="banner-content">
     <div class="banner-tag">Our Purpose</div>
-    <h2>Building real opportunity,<br/>one asset at a time.</h2>
+    <h2>Every asset redirected is an act of patronage.<br/>Every entrepreneur equipped is a legacy continued.</h2>
   </div>
 </div>
-<!-- ══ 10. FAQS + CTA + FOOTER ══ -->
+
+<!-- ══ 10. FAQ + CTA ══ -->
 <section class="faq-section sp" id="faq">
   <div class="container">
     <div class="faq-inner">
@@ -599,8 +548,8 @@
 
     <!-- FINAL CTA -->
     <div class="cta-block reveal" id="contact">
-<h3>Every asset carries a story.<br/>What will yours build?</h3>
-<p>Whether you are a company ready to unlock the value in your surplus — or an entrepreneur with the vision and integrity to carry a legacy forward — we want to be part of that story. Let's build something that lasts.</p>
+      <h3>Ready to turn your surplus into someone's foundation?</h3>
+      <p>Whether you are a company with assets ready to move — or an entrepreneur with the vision and integrity to carry a legacy forward — the patronage model starts with one conversation. Let's build something that lasts beyond the transaction.</p>
       <div class="cta-block-btns">
         <a href="mailto:contact@primeexcessmgmt.com" class="btn-g btn-white">Contact Us Now</a>
         <a href="#about" class="btn-g btn-ghost-w">Learn More</a>
@@ -611,42 +560,49 @@
 </section>
 
 <!-- ══ FOOTER ══ -->
+<!-- FIX 4: All 4 columns are now correctly inside footer-top grid -->
 <footer class="site-footer">
   <div class="footer-top">
+
     <div class="footer-brand-col">
       <div class="footer-logo-wrap">
         <div class="footer-logo-mark">P</div>
         <div class="footer-logo-name">Prime Excess <span>Management</span></div>
       </div>
-<p class="footer-tagline-text">Enabling companies to focus on building their infrastructure — while creating pathways for visionary entrepreneurs to carry The Legacy forward with precision, care, and integrity.</p>      <div class="footer-badge">
+      <p class="footer-tagline-text">Turning corporate surplus into strategic patronage — recovering value for companies and building the foundation that visionary entrepreneurs need to carry The Legacy forward.</p>
+      <!-- FIX 4: footer-badge wrapper restored -->
+      <div class="footer-badge">
         <div class="fdot"></div><span>Maximize Value</span>
         <div class="fdot"></div><span>Manage Excess</span>
         <div class="fdot"></div><span>Deliver Results</span>
       </div>
     </div>
+
     <div>
       <div class="footer-col-title">Navigation</div>
       <ul class="footer-col-links">
         <li><a href="#about">About</a></li>
         <li><a href="#approach">Our Approach</a></li>
-        <li><a href="#services">Services</a></li>
         <li><a href="#entrepreneurs">Entrepreneurs</a></li>
+        <li><a href="#ecosystem">The Ecosystem</a></li>
         <li><a href="#steps">How We Work</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+
     <div>
       <div class="footer-col-title">Services</div>
       <ul class="footer-col-links">
-        <li><a href="#services">Industrial Equipment</a></li>
-        <li><a href="#services">Surplus Inventory</a></li>
-        <li><a href="#services">Technology & Electronics</a></li>
-        <li><a href="#services">Asset Liquidation</a></li>
-        <li><a href="#services">Auction Platforms</a></li>
+        <li><a href="#about">Industrial Equipment</a></li>
+        <li><a href="#about">Surplus Inventory</a></li>
+        <li><a href="#about">Technology & Electronics</a></li>
+        <li><a href="#about">Asset Liquidation</a></li>
+        <li><a href="#about">Auction Platforms</a></li>
         <li><a href="#entrepreneurs">Entrepreneur Access</a></li>
       </ul>
     </div>
+
     <div>
       <div class="footer-col-title">Get In Touch</div>
       <div class="footer-contact-block">
@@ -664,10 +620,11 @@
         </div>
       </div>
     </div>
+
   </div>
   <div class="footer-bottom">
     <p class="footer-copy">© 2025 <span>Prime Excess Management</span>. All rights reserved.</p>
-   <div class="footer-motto">Carry The Legacy · Build the Future · Deliver with Integrity</div>
+    <div class="footer-motto">Recover Value · Enable Patronage · Carry The Legacy</div>
   </div>
 </footer>
 
@@ -712,14 +669,6 @@ function toggleFaq(btn) {
     b.closest('.faq-item').querySelector('.faq-body').style.maxHeight = '0';
   });
   if (!isOpen) { btn.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
-}
-
-/* SERVICES TABS */
-function switchTab(idx, btn) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('tab-' + idx).classList.add('active');
 }
 
 /* REVEAL */
