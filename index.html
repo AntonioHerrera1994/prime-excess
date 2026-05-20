@@ -15,13 +15,14 @@
 <!-- ══ NAV ══ -->
 <nav id="main-nav">
   <a href="#home" class="nav-logo">
-    <img src="/logo-blanco.png"  class="logo-white">
+    <img src="/logo-blanco.png" class="logo-white">
     <img src="/logo-transp.png" class="logo-color">
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#approach">Approach</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#entrepreneurs">Entrepreneurs</a></li>
     <li><a href="#steps">How We Work</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
@@ -32,27 +33,28 @@
 </nav>
 
 <div class="mobile-drawer" id="mobile-drawer">
-  <a href="#about"    class="mob-l">About</a>
-  <a href="#approach" class="mob-l">Approach</a>
-  <a href="#services" class="mob-l">Services</a>
-  <a href="#steps"    class="mob-l">How We Work</a>
-  <a href="#faq"      class="mob-l">FAQ</a>
-  <a href="#contact"  class="mob-cta mob-l">Get In Touch →</a>
+  <a href="#about"          class="mob-l">About</a>
+  <a href="#approach"       class="mob-l">Approach</a>
+  <a href="#services"       class="mob-l">Services</a>
+  <a href="#entrepreneurs"  class="mob-l">Entrepreneurs</a>
+  <a href="#steps"          class="mob-l">How We Work</a>
+  <a href="#faq"            class="mob-l">FAQ</a>
+  <a href="#contact"        class="mob-cta mob-l">Get In Touch →</a>
 </div>
 
-<!-- ══ 1. HERO — stays dark ══ -->
+<!-- ══ 1. HERO ══ -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Prime Ecxess Managment</div>
+    <div class="hero-eyebrow">Prime Excess Management</div>
     <h1>
       Every asset<br/>tells a story.
       <em>Of what comes next.</em>
     </h1>
-    <p class="hero-sub">Prime Excess Management connects surplus industrial assets with real opportunity — maximizing value for companies while creating pathways for ambitious entrepreneurs.</p>
+    <p class="hero-sub">Prime Excess Management connects surplus industrial assets with real opportunity — maximizing value for companies and opening doors for the next generation of entrepreneurs and emerging businesses.</p>
     <div class="hero-btns">
       <a href="#contact" class="hbtn hbtn-blue">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <a href="#about"   class="hbtn hbtn-ghost">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
@@ -78,7 +80,7 @@
     <div class="about-heading reveal">
       <div class="section-tag" style="justify-content:center;margin-bottom:16px;">About Prime Excess</div>
       <h2>Built for companies that want to<br/>work smarter with their assets.</h2>
-      <p>Whether you manage a single facility or multiple operations, our frameworks help you recover maximum value from surplus assets, streamline disposition, and create opportunities beyond your organization.</p>
+      <p>Whether you manage a single facility or multiple operations, our frameworks help you recover maximum value from surplus assets, streamline disposition, and create real opportunities — for your business and for the entrepreneurs who need what you no longer use.</p>
     </div>
     <div class="about-grid">
       <div class="about-card reveal">
@@ -96,6 +98,11 @@
         <h3>Technology & Electronics</h3>
         <p>Outdated servers, networking equipment, lab instruments, and enterprise technology retain significant value long after they leave active inventory. We recover it through strategic remarketing and repurposing.</p>
       </div>
+      <div class="about-card reveal d3" style="border-color:var(--blue);background:var(--blue-bg);">
+        <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3>Entrepreneur Support</h3>
+        <p>We are a young company that understands the entrepreneurial journey. We channel surplus assets toward emerging businesses — giving them access to real equipment at accessible prices so they can launch, grow, and compete.</p>
+      </div>
     </div>
     <div class="about-btns reveal d3">
       <a href="#approach" class="hbtn hbtn-blue">Our Approach <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
@@ -109,9 +116,7 @@
   <div class="approach-inner">
     <div class="approach-img">
       <div class="approach-img-pattern"></div>
-      <div class="approach-img-orb">
-      
-      </div>
+      <div class="approach-img-orb"></div>
     </div>
     <div class="approach-content">
       <div class="section-tag">Our Approach</div>
@@ -149,7 +154,7 @@
   </div>
 </section>
 
-<!-- ══ 5. SERVICES ══ -->
+<!-- ══ 5. SERVICES ══
 <section class="services-section sp" id="services">
   <div class="container">
     <div class="section-tag reveal">What We Manage</div>
@@ -159,11 +164,10 @@
       <button class="tab-btn" onclick="switchTab(1,this)">Surplus Inventory</button>
       <button class="tab-btn" onclick="switchTab(2,this)">Technology & Electronics</button>
     </div>
-    <!-- TAB 1 -->
+
+   TAB 1 
     <div class="tab-panel active" id="tab-0">
-      <div class="tab-media" style="background-image: url('/assets/industrial.webp');">
-       
-      </div>
+      <div class="tab-media" style="background-image:url('/assets/industrial.webp');"></div>
       <div class="tab-info">
         <div class="tab-period">Heavy Machinery & Operations</div>
         <h3 class="tab-title">Industrial Equipment</h3>
@@ -175,12 +179,11 @@
         </div>
       </div>
     </div>
-    <!-- TAB 2 -->
+  
+    TAB 2 
     <div class="tab-panel" id="tab-1">
-  <div class="tab-media" style="background-image: url('/assets/inventory.webp');">
-       
-      </div>
-            <div class="tab-info">
+      <div class="tab-media" style="background-image:url('/assets/inventory.webp');"></div>
+      <div class="tab-info">
         <div class="tab-period">Overstock & Warehouse Management</div>
         <h3 class="tab-title">Surplus Inventory</h3>
         <p class="tab-desc">Idle inventory ties up capital and space. We convert warehouse overflow into recovered value through structured disposition strategies designed around your business timeline.</p>
@@ -191,12 +194,10 @@
         </div>
       </div>
     </div>
-    <!-- TAB 3 -->
+    <!-- TAB 3 
     <div class="tab-panel" id="tab-2">
-  <div class="tab-media" style="background-image: url('/assets/it.webp');">
-       
-      </div>
-            <div class="tab-info">
+      <div class="tab-media" style="background-image:url('/assets/it.webp');"></div>
+      <div class="tab-info">
         <div class="tab-period">IT & Technology Assets</div>
         <h3 class="tab-title">Technology & Electronics</h3>
         <p class="tab-desc">Outdated technology doesn't mean zero value. Enterprise IT assets, lab instruments, and electronics retain recoverable value long past their useful life in your organization.</p>
@@ -208,9 +209,9 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
-<!-- ══ 6. STATS — text only, dark ══ -->
+<!-- ══ 6. STATS ══ -->
 <section class="stats-section" id="stats">
   <div class="stats-headline container reveal">
     <div class="stats-headline-tag">The Impact</div>
@@ -239,17 +240,155 @@
   </div>
 </section>
 
-<!-- ══ 7. IMAGE BANNER ══ -->
-<div class="banner-section">
-  <div class="banner-bg"></div>
-  <div class="banner-overlay"></div>
-  <div class="banner-content">
-    <div class="banner-tag">Our Purpose</div>
-    <h2>Building real opportunity,<br/>one asset at a time.</h2>
-  </div>
-</div>
 
-<!-- ══ 8. HOW WE WORK ══ -->
+<!-- ══ 8. ENTREPRENEURS ══ -->
+<section class="entrepreneurs-section sp" id="entrepreneurs">
+  <div class="container">
+
+    <div class="entr-header reveal">
+      <div class="section-tag" style="justify-content:center;margin-bottom:16px;">Strategic Partners</div>
+      <h2>We don't just manage assets.<br/>We help build what comes next.</h2>
+      <p class="entr-sub">We are a young company — and that gives us perspective. We know what it means to start without the resources of a corporation. That's why we created a direct pathway for entrepreneurs and emerging businesses to access equipment, technology, and inventory that would otherwise be out of reach.</p>
+    </div>
+
+    <div class="entr-grid">
+
+      <!-- Left column — manifesto -->
+      <div class="entr-manifesto reveal d1">
+        <div class="entr-manifesto-inner">
+          <div class="entr-quote-mark">"</div>
+          <p class="entr-quote-text">A business shouldn't fail for lack of equipment when that equipment exists, is available, and just needs the right connection.</p>
+          <div class="entr-quote-author">
+            <div class="entr-author-dot"></div>
+            Prime Excess Management — Mission
+          </div>
+        </div>
+        <div class="entr-pillars">
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">01</div>
+            <div>
+              <div class="entr-pillar-title">Direct Access</div>
+              <p class="entr-pillar-desc">We connect entrepreneurs directly with industrial assets, technology, and surplus inventory — no inflated middlemen, no corporate bureaucracy slowing you down.</p>
+            </div>
+          </div>
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">02</div>
+            <div>
+              <div class="entr-pillar-title">Accessible Pricing</div>
+              <p class="entr-pillar-desc">Surplus assets recover at a fraction of their original cost. That price gap is your competitive advantage when launching or scaling your operation.</p>
+            </div>
+          </div>
+          <div class="entr-pillar">
+            <div class="entr-pillar-num">03</div>
+            <div>
+              <div class="entr-pillar-title">A Real Partnership</div>
+              <p class="entr-pillar-desc">We're not a vendor. We're a partner that understands your stage, your context, and your goals — and moves at your pace so you can grow sustainably.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column — niche cards -->
+      <div class="entr-cards-col reveal d2">
+        <div class="entr-section-label">What types of businesses do we support?</div>
+        <div class="entr-cards">
+
+          <div class="entr-card">
+            <div class="entr-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div class="entr-card-body">
+              <div class="entr-card-title">Manufacturing & Production</div>
+              <p class="entr-card-desc">Small shops and emerging manufacturers who need real machinery to launch production lines without massive capital investment.</p>
+            </div>
+          </div>
+
+          <div class="entr-card">
+            <div class="entr-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            </div>
+            <div class="entr-card-body">
+              <div class="entr-card-title">Retail & E-Commerce</div>
+              <p class="entr-card-desc">Resellers, online stores, and independent distributors who can turn surplus inventory into real margin from day one.</p>
+            </div>
+          </div>
+
+          <div class="entr-card">
+            <div class="entr-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="entr-card-body">
+              <div class="entr-card-title">Tech & Digital Services</div>
+              <p class="entr-card-desc">Startups, agencies, and technical teams that need IT infrastructure — servers, networking gear, workstations — to scale without paying full retail.</p>
+            </div>
+          </div>
+
+          <div class="entr-card">
+            <div class="entr-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="entr-card-body">
+              <div class="entr-card-title">Services & Construction</div>
+              <p class="entr-card-desc">Independent contractors, maintenance firms, and emerging builders who can equip themselves with tools and machinery at a fraction of the cost.</p>
+            </div>
+          </div>
+
+          <div class="entr-card">
+            <div class="entr-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="entr-card-body">
+              <div class="entr-card-title">Logistics & Warehousing</div>
+              <p class="entr-card-desc">Logistics operators and storage businesses that need racking, forklifts, conveyors, and material handling equipment to scale their capacity.</p>
+            </div>
+          </div>
+
+          <div class="entr-card entr-card-cta">
+            <div class="entr-card-cta-inner">
+              <div class="entr-card-cta-label">Your niche isn't listed?</div>
+              <p>If your business can benefit from surplus assets, we want to hear from you. We don't filter by industry — we filter by potential.</p>
+              <a href="#contact" class="hbtn hbtn-blue" style="font-size:.8rem;padding:12px 22px;">Tell us your story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Entrepreneur process -->
+    <div class="entr-process reveal d3">
+      <div class="entr-process-label">How you access assets as an entrepreneur</div>
+      <div class="entr-process-steps">
+        <div class="entr-ps">
+          <div class="entr-ps-num">1</div>
+          <div class="entr-ps-title">Tell Us About Your Project</div>
+          <p class="entr-ps-desc">A brief call to understand your business, your current stage, and what kinds of assets could move your operation forward.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">2</div>
+          <div class="entr-ps-title">We Explore Options</div>
+          <p class="entr-ps-desc">We review our active inventory and asset network to identify what fits your needs and budget — no pressure, no commitment required.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">3</div>
+          <div class="entr-ps-title">We Structure the Deal</div>
+          <p class="entr-ps-desc">Flexible, transparent terms. No corporate bureaucracy, no hidden complexity. Your advantage is our goal — the deal should feel that way.</p>
+        </div>
+        <div class="entr-ps-arrow">→</div>
+        <div class="entr-ps">
+          <div class="entr-ps-num">4</div>
+          <div class="entr-ps-title">You Launch. We Grow Together.</div>
+          <p class="entr-ps-desc">When your business scales, our ecosystem grows with you. The relationship doesn't end at the transaction — it starts there.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ 9. HOW WE WORK ══ -->
 <section class="steps-section sp" id="steps">
   <div class="container">
     <div class="steps-header reveal">
@@ -281,7 +420,16 @@
   </div>
 </section>
 
-<!-- ══ 9. FAQS + CTA + FOOTER ══ -->
+<!-- ══ 7. IMAGE BANNER ══ -->
+<div class="banner-section">
+  <div class="banner-bg"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="banner-tag">Our Purpose</div>
+    <h2>Building real opportunity,<br/>one asset at a time.</h2>
+  </div>
+</div>
+<!-- ══ 10. FAQS + CTA + FOOTER ══ -->
 <section class="faq-section sp" id="faq">
   <div class="container">
     <div class="faq-inner">
@@ -339,6 +487,15 @@
         </div>
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">I'm an entrepreneur — how do I access surplus assets through Prime Excess?</span>
+            <svg class="faq-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">Reach out directly and tell us about your business, your stage, and what you need. We'll match your requirements against our active asset network and available inventory. No minimum order, no industry restriction — we work with businesses at any stage across any niche. The conversation starts without any commitment on your part.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
             <span class="faq-q">How do I know if my surplus is worth managing professionally?</span>
             <svg class="faq-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
           </button>
@@ -383,6 +540,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#approach">Our Approach</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#entrepreneurs">Entrepreneurs</a></li>
         <li><a href="#steps">How We Work</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -396,7 +554,7 @@
         <li><a href="#services">Technology & Electronics</a></li>
         <li><a href="#services">Asset Liquidation</a></li>
         <li><a href="#services">Auction Platforms</a></li>
-        <li><a href="#services">Asset Recovery</a></li>
+        <li><a href="#entrepreneurs">Entrepreneur Access</a></li>
       </ul>
     </div>
     <div>
