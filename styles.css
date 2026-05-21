@@ -363,7 +363,22 @@ nav.solid .nav-burger span { background: var(--text-h); }
   nav { padding: 0 20px; }
   .nav-links, .nav-cta { display: none; }
   .nav-burger { display: flex; }
-  .hero-content { padding: 0 24px; }
+    .hero {
+    min-height: 100svh;          /* usa svh en lugar de vh para evitar saltos por barra del navegador */
+    align-items: center;         /* centra verticalmente en lugar de flex-end */
+    padding-top: calc(var(--nav-h) + 32px);  /* empuja el contenido bajo el nav fijo */
+    padding-bottom: 60px;
+  }
+  .hero-content {  padding: 0 24px;
+    width: 100%; }
+      .hero h1 {
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    max-width: 100%;
+  }
   .container { padding: 0 24px; }
   .sp { padding: 80px 0; }
   .logo-strip { padding: 28px 24px; }
