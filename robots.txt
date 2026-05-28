@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://excess-mgt.com/sitemap.xml

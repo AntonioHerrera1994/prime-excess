@@ -27,7 +27,7 @@ nav.solid { background: rgba(255,255,255,.97); backdrop-filter: blur(20px); bord
 .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; padding: 10px 0; }
 .nav-logo img { width: 100px; height: auto; position: absolute; transition: opacity .35s ease; }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-.nav-links a { font-size: .85rem; font-weight: 600; color: white; text-decoration: none; transition: color .2s; }
+.nav-links a { font-size: 1rem; font-weight: 600; color: white; text-decoration: none; transition: color .2s; }
 .nav-links a:hover { color: var(--blue); }
 .nav-cta { background: var(--blue); color: #fff; font-size: .82rem; font-weight: 700; padding: 10px 24px; border-radius: 6px; text-decoration: none; transition: all .25s; border: none; cursor: pointer; font-family: inherit; }
 .nav-cta:hover { background: var(--blue-d); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,61,191,.3); }
@@ -64,7 +64,7 @@ nav.solid .nav-burger span { background: var(--text-h); }
 .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,.04) 1px, transparent 1px); background-size: 80px 80px; z-index: 0; }
 .hero-glow { position: absolute; right: -200px; top: -100px; width: 860px; height: 860px; border-radius: 50%; background: radial-gradient(circle,rgba(26,61,191,.45) 0%,transparent 65%); z-index: 0; }
 .hero-glow2 { position: absolute; left: 5%; bottom: -120px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle,rgba(26,61,191,.18) 0%,transparent 65%); z-index: 0; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(110deg,rgba(5,12,26,.9) 0%,rgba(5,12,26,.6) 55%,rgba(5,12,26,.25) 100%); z-index: 1; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(110deg,rgba(5, 12, 26, 0.935) 0%,rgba(5,12,26,.6) 55%,rgba(5,12,26,.25) 100%); z-index: 1; }
 .hero-content { position: relative; z-index: 2; padding: 0 60px; max-width: 960px; }
 .hero-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: white; margin-bottom: 22px; display: flex; align-items: center; gap: 12px; opacity: 0; transform: translateY(20px); animation: fadeUp .8s .3s ease forwards; }
 .hero-eyebrow::before { content: ''; width: 32px; height: 2px; background: var(--blue-l); border-radius: 2px; }
